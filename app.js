@@ -2,6 +2,7 @@
 var express = require('express');
 var path = require('path');
 var mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var app = express();
